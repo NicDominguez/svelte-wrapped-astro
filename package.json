@@ -1,8 +1,14 @@
 {
   "name": "svelte-wrapped-astro",
+  "sideEffects": false,
   "version": "1.0.0",
+  "private": true,
   "description": "Astro Components with Svelte Wrapper",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicDominguez/svelte-wrapped-astro.git"
+  },
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist && npm run build:cjs && npm run build:esm",
