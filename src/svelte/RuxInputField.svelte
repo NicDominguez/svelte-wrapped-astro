@@ -35,6 +35,8 @@ const setProp = (prop, value) => { if (__ref) __ref[prop] = value; };
 const onEvent = (e) => {
   e.stopPropagation();
   dispatch(e.type, e.detail);
+  if (e.type === 'rux-change') { value = e.detail; }
+  if (e.type === 'rux-input') { value = e.detail; }
 };
 </script>
 
